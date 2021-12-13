@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="@android:color/darker_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <item
+        android:id="@+id/general"
+        android:title="general"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        app:cnb_iconColor="@color/colorPrimaryDark">
+    </item>
+
+    <item
+        android:id="@+id/bussiness"
+        android:icon="@drawable/ic_baseline_business_24"
+        android:title="bussiness"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
+
+    <item
+        android:id="@+id/entertainment"
+        android:title="entertainment"
+        android:icon="@drawable/ic_enternatiment"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
+
+
+
+    <item
+        android:id="@+id/health"
+        android:title="health"
+        android:icon="@drawable/ic_baseline_health_and_safety"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
+
+    <item
+        android:id="@+id/science"
+        android:title="science"
+        android:icon="@drawable/ic_science"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
+
+    <item
+        android:id="@+id/sports"
+        android:title="sports"
+        android:icon="@drawable/ic_sport"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
+
+    <item
+        android:id="@+id/technology"
+        android:title="technology"
+        android:icon="@drawable/ic_technology"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
+    <item
+        android:id="@+id/search"
+        android:title="favourite"
+        android:icon="@drawable/ic_search"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
+    <item
+        android:id="@+id/favourite"
+        android:title="favourite"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
+</menu>
