@@ -3,25 +3,48 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Setup and projects/android projects/NewsAppOrg/app/src/main/res/layout/activity_main.xml" value="0.15110998990918265" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/drawable-v24/back.xml" value="0.34791666666666665" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/drawable-v24/blue_button.xml" value="0.35208333333333336" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/drawable-v24/facebook_button.xml" value="0.35208333333333336" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.35208333333333336" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/ic_back.xml" value="0.35208333333333336" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.35208333333333336" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.35208333333333336" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/ic_book_black_24dp.xml" value="0.35208333333333336" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/ic_business.xml" value="0.35208333333333336" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/ic_file_download_black_24dp.xml" value="0.35208333333333336" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/ic_launcher_background.xml" value="0.35208333333333336" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/ic_technology.xml" value="0.34791666666666665" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/progress_drawable.xml" value="0.35208333333333336" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/drawable/tab_selector.xml" value="0.35208333333333336" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout-land/activity_v1.xml" value="0.14842381786339756" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout-land/activity_verification_code.xml" value="0.2788966725043783" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout-land/view_loading_video.xml" value="0.2788966725043783" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout-sw600dp/activity_v1.xml" value="0.248828125" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_bookmark.xml" value="0.32760416666666664" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_detail.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_main.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_mainn.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_o_t_p_validation.xml" value="0.33177083333333335" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_otp.xml" value="0.33177083333333335" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_registration.xml" value="0.33177083333333335" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_saved_pages.xml" value="0.32760416666666664" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_v1.xml" value="0.33177083333333335" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout/activity_verification_code.xml" value="0.1606962663975782" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout/fragment_auth.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/fragment_business.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/fragment_fav.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/fragment_search.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/item_layout.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/layout/item_news.xml" value="0.33177083333333335" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/layout/view_loading_video.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/menu/menu.xml" value="0.33177083333333335" />
         <entry key="..\:/NewsAppOrg/app/src/main/res/menu/nav_menu.xml" value="0.33177083333333335" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/xml/shortcuts.xml" value="0.33177083333333335" />
+        <entry key="..\:/NewsAppOrg/app/src/main/res/xml/static_shortcuts.xml" value="0.33177083333333335" />
       </map>
     </option>
   </component>

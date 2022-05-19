@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsAppOrg">
         <activity
-            android:name=".activity.LoginActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,9 +25,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.DetailActivity" />
-        <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.OTPValidation" />
-        <activity android:name=".activity.MainActivityy" />
+        <activity android:name=".activity.MultiLogin" />
+        <activity android:name=".activity.BookmarkActivity" />
+        <activity android:name=".activity.SavedPages" />
+        <activity android:name=".activity.LoginActivity" />
     </application>
 
 </manifest>

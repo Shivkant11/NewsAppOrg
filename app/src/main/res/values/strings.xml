@@ -4,4 +4,49 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+
+    <string name="shortcut2_short">Second</string>
+    <string name="shortcut2_long">Second Screen</string>
+
+    <string name="shortcut1_short">Main</string>
+    <string name="shortcut1_long">Main Screen</string>
+    <string name="shortcut1_targetP">com.ksolves.newsapporg.activity</string>
+    <string name="shortcut1_targetPc">com.ksolves.newsapporg.activity.MainActivityy</string>
+
+    <string name="disabled_msg">Currently Disabled</string>
+
+    <string name="saved_pages">Saved Pages</string>
+    <string name="loading_video">Loading video</string>
+
+    <string name="continue_string">Continue</string>
+
+
+
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+
+
+    <string name="facebookLogin">Facebook Login</string>
+    <string name="facebook_app_id">686078505161575</string>
+    <string name="fb_login_protocol_scheme">fb686078505161575</string>
+
+    <string name="fullName">Full Name</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone Number</string>
+    <string name="or">or</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="name_required_error">Name is required to sign up.</string>
+    <string name="phone_required_error">Phone number is required to sign up.</string>
+    <string name="email_required_error">Email address is required to sign up.</string>
+    <string name="password_required_error">Password is required to sign up.</string>
+    <string name="malformed_phone_error">This phone number is badly formatted.</string>
+    <string name="malformed_email_error">This email address is badly formatted.</string>
+    <string name="short_password_error">Password should be at least 6 characters.</string>
+    <string name="select_image">Select Image</string>
+    <string name="logout">Log Out</string>
+    <string name="welcome_to_messenger" />
+    <string name="stay_in_touch" />
+
 </resources>

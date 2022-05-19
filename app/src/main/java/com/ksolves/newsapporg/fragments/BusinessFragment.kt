@@ -1,4 +1,4 @@
-package com.ksolves.newsapporg.Fragments
+package com.ksolves.newsapporg.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -17,28 +17,31 @@ import retrofit2.Call
 import retrofit2.Response
 
 
-class HealthFragment : Fragment() {
+class BusinessFragment : Fragment() {
 
     lateinit var adapter: Adapter
     private var articles = mutableListOf<Article>()
     lateinit var fraglistNews : RecyclerView
+    lateinit var strtxt : String
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view : View = inflater.inflate(R.layout.fragment_home, container, false)
+        strtxt = arguments?.getString("str").toString()
+
         fraglistNews = view.findViewById(R.id.fraglistNews)
         val layoutManager = LinearLayoutManager(requireContext())
         adapter = Adapter(requireContext(),articles)
         fraglistNews.adapter = adapter
         fraglistNews.layoutManager = layoutManager
-        getNews()
+        getNews(strtxt)
         return view
     }
 
-    private fun getNews(){
-        val news = NewsService.newsInstances.getHealth("in","health")
+    private fun getNews(strtxt : String){
+        val news = NewsService.newsInstances.getBusiness("in",strtxt)
         news.enqueue(object :retrofit2.Callback<News>{
             override fun onFailure(call: Call<News>, t: Throwable) {
                 Log.d("Error","Error",t)

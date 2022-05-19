@@ -1,4 +1,4 @@
-package com.ksolves.newsapporg.Fragments
+package com.ksolves.newsapporg.fragments
 
 import android.os.Bundle
 import android.util.Log

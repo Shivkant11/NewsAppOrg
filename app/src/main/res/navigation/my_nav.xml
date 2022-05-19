@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/generalFragment">
+
+    <fragment
+        android:id="@+id/businessFragment"
+        android:name="com.ksolves.newsapporg.fragments.BusinessFragment"
+        android:label="BusinessFragment" />
+    <fragment
+        android:id="@+id/entertainmentFragment2"
+        android:name="com.ksolves.newsapporg.fragments.EntertainmentFragment"
+        android:label="EntertainmentFragment" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.ksolves.newsapporg.fragments.FavouriteFragment"
+        android:label="FavouriteFragment" />
+    <fragment
+        android:id="@+id/generalFragment"
+        android:name="com.ksolves.newsapporg.fragments.GeneralFragment"
+        android:label="GeneralFragment" />
+    <fragment
+        android:id="@+id/healthFragment"
+        android:name="com.ksolves.newsapporg.fragments.HealthFragment"
+        android:label="HealthFragment" />
+    <fragment
+        android:id="@+id/scienceFragment"
+        android:name="com.ksolves.newsapporg.fragments.ScienceFragment"
+        android:label="ScienceFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ksolves.newsapporg.fragments.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/technologyFragment"
+        android:name="com.ksolves.newsapporg.fragments.TechnologyFragment"
+        android:label="TechnologyFragment" />
+    <fragment
+        android:id="@+id/sportsFragment"
+        android:name="com.ksolves.newsapporg.fragments.SportsFragment"
+        android:label="SportsFragment" />
+</navigation>

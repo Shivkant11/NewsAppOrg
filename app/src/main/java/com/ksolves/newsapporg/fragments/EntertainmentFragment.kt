@@ -1,4 +1,4 @@
-package com.ksolves.newsapporg.Fragments
+package com.ksolves.newsapporg.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.room.Room
-import com.ksolves.newsapporg.Database.MyDatabase
 import com.ksolves.newsapporg.adapters.Adapter
 import com.ksolves.newsapporg.models.Article
 import com.ksolves.newsapporg.models.News
@@ -19,7 +17,7 @@ import retrofit2.Call
 import retrofit2.Response
 
 
-class BusinessFragment : Fragment() {
+class EntertainmentFragment : Fragment() {
 
     lateinit var adapter: Adapter
     private var articles = mutableListOf<Article>()
@@ -40,7 +38,7 @@ class BusinessFragment : Fragment() {
     }
 
     private fun getNews(){
-        val news = NewsService.newsInstances.getBusiness("in","business")
+        val news = NewsService.newsInstances.getEntertainment("in","entertainment")
         news.enqueue(object :retrofit2.Callback<News>{
             override fun onFailure(call: Call<News>, t: Throwable) {
                 Log.d("Error","Error",t)

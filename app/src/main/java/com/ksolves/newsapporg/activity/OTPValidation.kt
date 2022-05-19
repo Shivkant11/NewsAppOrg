@@ -3,7 +3,7 @@ package com.ksolves.newsapporg.activity
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
-import android.util.Log
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +14,7 @@ import com.google.firebase.FirebaseTooManyRequestsException
 import com.google.firebase.auth.*
 import com.ksolves.newsapporg.R
 import com.ksolves.newsapporg.utils.SmsBroadcastReceiver
-import kotlinx.android.synthetic.main.activity_o_t_p_validation.*
+import kotlinx.android.synthetic.main.activity_verification_code.*
 import java.util.regex.Pattern
 
 class OTPValidation : AppCompatActivity() {
@@ -23,14 +23,15 @@ class OTPValidation : AppCompatActivity() {
     private val REQ_USER_CONSENT = 200
     var smsBroadcastReceiver : SmsBroadcastReceiver? = null
     lateinit var otpTextField : EditText
+    lateinit var verifyButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_o_t_p_validation)
+        setContentView(R.layout.activity_otp)
         otpTextField = findViewById(R.id.otpTextField)
+        verifyButton = findViewById(R.id.verifyButton)
 
         val mobileNumber = intent.getStringExtra("mobileNumber")
-        Log.d("TAGccp", mobileNumber.toString())
 
         mAuth = FirebaseAuth.getInstance()
 
@@ -41,7 +42,7 @@ class OTPValidation : AppCompatActivity() {
             this, // Activity (for callback binding)
             callbacks) // OnVerificationStateChangedCallbacks
 
-        startSmartUserConsent()
+       // startSmartUserConsent()
 
         verifyButton.setOnClickListener {
             if (!otpTextField.text.isNullOrEmpty()) {
@@ -98,7 +99,7 @@ class OTPValidation : AppCompatActivity() {
                     if (task.isSuccessful) {
                         //verification successful we will start the profile activity
                         Toast.makeText(this,"Success", Toast.LENGTH_LONG).show()
-                        val i = Intent(this, MainActivityy::class.java)
+                        val i = Intent(this, MainActivity::class.java)
                         startActivity(i)
                     } else {
                         Toast.makeText(this,"Failed", Toast.LENGTH_LONG).show()

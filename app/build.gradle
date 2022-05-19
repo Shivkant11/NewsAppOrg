@@ -7,6 +7,7 @@ apply plugin : 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.github.matthiasrobbers.shortbread'
 
 
 android {
@@ -95,10 +96,18 @@ dependencies {
     // When using the BoM, you don't specify versions in Firebase library dependencies
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.android.gms:play-services-auth:20.0.0'
 
     //country code picker
 
     implementation 'com.hbb20:ccp:2.5.4'
+
+//    implementation 'com.github.matthiasrobbers:shortbread:1.4.0'
+//    kapt 'com.github.matthiasrobbers:shortbread-compiler:1.4.0'
+
+    implementation 'com.facebook.android:facebook-android-sdk:5.0.0'
+
+
 
 
 

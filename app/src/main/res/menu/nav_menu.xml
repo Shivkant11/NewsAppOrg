@@ -83,4 +83,22 @@
         app:cnb_iconColor="@color/colorPrimaryDark"
         >
     </item>
+
+    <item
+        android:id="@+id/bookmark"
+        android:title="bookmark"
+        android:icon="@drawable/ic_bookmark"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
+
+    <item
+        android:id="@+id/sinout"
+        android:title="SignOut"
+        android:icon="@drawable/ic_signout"
+        android:enabled="true"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        >
+    </item>
 </menu>

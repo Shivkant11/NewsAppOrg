@@ -50,7 +50,7 @@
             android:layout_marginTop="8dp">
 
             <ImageButton
-                android:id="@+id/Button"
+                android:id="@+id/favButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
@@ -58,6 +58,14 @@
                 app:mfb_favorite_image="@drawable/ic_baseline_favorite_24"
                 android:background="@android:color/white"
                 app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+            <ImageButton
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="290dp"
+                android:background="@android:color/white"
+                app:srcCompat="@drawable/ic_baseline_share_24" />
 
         </RelativeLayout>
 

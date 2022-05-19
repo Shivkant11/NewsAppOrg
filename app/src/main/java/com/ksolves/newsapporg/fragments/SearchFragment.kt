@@ -1,7 +1,9 @@
-package com.ksolves.newsapporg.Fragments
+package com.ksolves.newsapporg.fragments
 
 import android.content.Context
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -22,43 +24,57 @@ import retrofit2.Call
 import retrofit2.Response
 
 
+
+
 class SearchFragment : Fragment() {
 
     lateinit var adapter: Adapter
     private var articles = mutableListOf<Article>()
     lateinit var fraglistNews : RecyclerView
     lateinit var imageClear : ImageView
-    lateinit var etSearchView : EditText
+    private lateinit var etSearchView : EditText
     lateinit var linearNews : LinearLayout
-    var strKeywords: String = ""
+    private var strKeywords: String = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view : View = inflater.inflate(R.layout.fragment_search, container, false)
-        fraglistNews = view.findViewById<RecyclerView>(R.id.rvListNews) as RecyclerView
-        imageClear = view.findViewById<ImageView>(R.id.imageClear) as ImageView
-        etSearchView = view.findViewById<EditText>(R.id.etSearchView) as EditText
+        fraglistNews = view.findViewById(R.id.rvListNews) as RecyclerView
+        imageClear = view.findViewById(R.id.imageClear) as ImageView
+        etSearchView = view.findViewById(R.id.etSearchView) as EditText
         linearNews = view.findViewById(R.id.linearNews)
         val layoutManager = LinearLayoutManager(requireContext())
         fraglistNews.layoutManager = layoutManager
-        imageClear.setVisibility(View.GONE)
-        linearNews.setVisibility(View.GONE)
+        imageClear.visibility = View.GONE
+        linearNews.visibility = View.GONE
 
         imageClear.setOnClickListener {
-            etSearchView.getText().clear()
+            etSearchView.text.clear()
             articles.clear()
-            linearNews.setVisibility(View.GONE)
-            imageClear.setVisibility(View.GONE)
+            linearNews.visibility = View.GONE
+            imageClear.visibility = View.GONE
         }
+
+        etSearchView.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                getSearchNews(s.toString())
+            }
+        })
 
         //action search
         etSearchView.setOnEditorActionListener(TextView.OnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
-                strKeywords = etSearchView.getText().toString()
+                strKeywords = etSearchView.text.toString()
                 if (strKeywords.isEmpty()) {
-                    Toast.makeText(context, "Form tidak boleh kosong!", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "", Toast.LENGTH_SHORT).show()
                 } else {
                     getSearchNews(strKeywords)
                 }

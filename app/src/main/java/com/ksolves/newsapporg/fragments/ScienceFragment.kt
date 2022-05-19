@@ -1,4 +1,4 @@
-package com.ksolves.newsapporg.Fragments
+package com.ksolves.newsapporg.fragments
 
 import android.os.Bundle
 import android.util.Log
@@ -17,7 +17,7 @@ import retrofit2.Call
 import retrofit2.Response
 
 
-class SportsFragment : Fragment() {
+class ScienceFragment : Fragment() {
 
     lateinit var adapter: Adapter
     private var articles = mutableListOf<Article>()
@@ -38,7 +38,7 @@ class SportsFragment : Fragment() {
     }
 
     private fun getNews(){
-        val news = NewsService.newsInstances.getSports("in","sports")
+        val news = NewsService.newsInstances.getScience("in", "science")
         news.enqueue(object :retrofit2.Callback<News>{
             override fun onFailure(call: Call<News>, t: Throwable) {
                 Log.d("Error","Error",t)

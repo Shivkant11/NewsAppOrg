@@ -3,7 +3,6 @@ package com.ksolves.newsapporg.adapters
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color.red
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,14 +30,27 @@ class Adapter(private val context: Context, val article: List<Article>): Recycle
     }
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
         val article = article[position]
+
         holder.title.text = article.title
         holder.description.text = article.description
-        Glide.with(context).load(article.urlToImage).into(holder.image)
+        Glide.with(context).load(article.urlToImage).placeholder(R.drawable.ic_error).into(holder.image)
         holder.itemView.setOnClickListener{
             Toast.makeText(context,article.title,Toast.LENGTH_SHORT).show()
             val intent = Intent(context, DetailActivity::class.java)
             intent.putExtra("URL",article.url)
+
             context.startActivity(intent)
+        }
+
+        holder.shareButton.setOnClickListener {
+            val shareIntent = Intent()
+            shareIntent.action = Intent.ACTION_SEND
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "${article.title} \n \n ${article.url}")
+            shareIntent.type = "text/plain"
+           //shareIntent.setPackage("com.whatsapp")
+            context.startActivity(Intent.createChooser(shareIntent, "share to"))
+            //context.startActivity(shareIntent)
+
         }
 
         holder.button.setOnClickListener {
@@ -68,7 +80,8 @@ class Adapter(private val context: Context, val article: List<Article>): Recycle
         var image = itemView.findViewById<ImageView>(R.id.image)!!
         var title = itemView.findViewById<TextView>(R.id.title)!!
         var description = itemView.findViewById<TextView>(R.id.description)!!
-        var button : ImageButton = itemView.findViewById(R.id.Button)
+        var button : ImageButton = itemView.findViewById(R.id.favButton)
+        var shareButton : ImageButton = itemView.findViewById(R.id.shareButton)
     }
 }
 
